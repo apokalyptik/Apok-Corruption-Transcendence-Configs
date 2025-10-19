@@ -21,20 +21,26 @@ Sources for configuration and mod values
 
 Changes to GameUserSettings.ini
 -------------------------------
-    ; Balanced around 150
-    DifficultyOffset=1.000000
-
-    ; not running a Pvp Server
-    ServerPVE=True
-
-    ; hopefully prevent losing dino balls randomly sometimes?
-    [DinoDepot]
-    DinoballAutoStackMode=3
+* Balanced around level 150 dinos:
+```
+DifficultyOffset=1.000000
+```
+* I don't want no PVP Server:
+```
+ServerPVE=True
+```
+* Hopefully a workaround for a bug causing odccasional dino losses
+```
+  [DinoDepot]
+  DinoballAutoStackMode=3
+```
 
 Changes to Game.ini
 -------------------
+* add all the NPC Overrides copy and pasted from the linked file in the [NPC Overrides post](https://discord.com/channels/694491278729019423/1178270462900441118/1220447625661124699)
+* Remove two engrams per the [Mod list and tweaks post](https://discord.com/channels/694491278729019423/1325487529746632838/1325490513436217405)
+```
     ; remove these two engrams per https://discord.com/channels/694491278729019423/1325487529746632838/1325490513436217405
     OverrideNamedEngramEntries=(EngramClassName="EngramEntry_Propagator_CS_C",EngramHidden=true)
     OverrideNamedEngramEntries=(EngramClassName="EngramEntry_Mutator_CS_C",EngramHidden=true)
-
-    ; NPC Overrides Copy and Pasted from https://discord.com/channels/694491278729019423/1178270462900441118/1220447625661124699
+```
