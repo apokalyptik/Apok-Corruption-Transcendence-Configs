@@ -3,7 +3,7 @@ Generating the base configs
 * Base config template: Cloned from GameServerApp.com's "Default settings" template for ASA
 * DynamicConfig - empty
 * chain - empty
-* end - `-mods=945677,949623,945883,940975,953154,941697,942024,959740 -DoCustomCosmeticValidation`
+* end - `-mods=945677,949623,945883,940975,953154,941697,942024,959740,1346108 -DoCustomCosmeticValidation`
   * 945677 [Ark: Corruption Transcendence](https://www.curseforge.com/ark-survival-ascended/mods/act)
   * 949623 [Nanoh's Spyglass](https://www.curseforge.com/ark-survival-ascended/mods/nanohs-spyglass)
   * 945883 [Omega Teleporters](https://www.curseforge.com/ark-survival-ascended/mods/omega-teleporters)
@@ -12,6 +12,7 @@ Generating the base configs
   * 941697 [Better Breeding](https://www.curseforge.com/ark-survival-ascended/mods/better-breeding)
   * 942024 [Dino Depot](https://www.curseforge.com/ark-survival-ascended/mods/dino-depot)
   * 959740 [GameServerApp.com Integration (Crossplay)](https://www.curseforge.com/ark-survival-ascended/mods/gsa-integration-no-shop)
+  * 1346108 [Ascended Dino Scanner](https://www.curseforge.com/ark-survival-ascended/mods/ascended-dino-scanner)
 
 Sources for configuration and mod values
 ----------------------------------------
@@ -38,6 +39,11 @@ ServerPVE=True
 ```
 [MessageOfTheDay]
 Message=Welcome to Ark: Corruption Transcendence
+```
+* Disable CS dino scanning in favor of the (hopefully) more performant [Ascended Dino Scanner](https://www.curseforge.com/ark-survival-ascended/mods/ascended-dino-scanner)
+```
+[CybersStructures]
+DisableDinoScan = true
 ```
 
 Changes to Game.ini
