@@ -34,6 +34,11 @@ ServerPVE=True
   [DinoDepot]
   DinoballAutoStackMode=3
 ```
+* MOTD
+```
+[MessageOfTheDay]
+Message=Welcome to Ark: Corruption Transcendence
+```
 
 Changes to Game.ini
 -------------------
